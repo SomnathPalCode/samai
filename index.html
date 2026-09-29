@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SamAI</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 2.5rem 1.25rem; max-width: 42rem;
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
+  h2 { margin-top: 2.5rem; font-size: 1.2rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  code { font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+
+<h1>SamAI</h1>
+<p class="sub">Birthday &amp; anniversary reminders, and on-device prescription scanning.</p>
+
+<h2 id="about">About</h2>
+<p>
+  SamAI is a small personal Android app used to keep track of family birthdays and
+  anniversaries, and to extract medicine details from photographs of prescriptions.
+  It is a personal tool and is not published on the Play Store.
+</p>
+
+<h2 id="privacy">Privacy policy</h2>
+
+<h3>What the app stores</h3>
+<p>
+  Reminders (a name, a date, and an event type) are stored in the app's private
+  storage on your own device. This data is never transmitted to a server operated by
+  anyone else, because the app has no server component.
+</p>
+
+<h3>Google Drive backup</h3>
+<p>
+  If you choose to sign in with Google, the app requests a single, narrowly scoped
+  permission: access to a hidden, app-private folder inside <em>your own</em> Google
+  Drive. The app can only read and write a backup file in that folder. It cannot see
+  your documents, photos, email, or any other file in your Drive account.
+</p>
+<p>
+  Sign-in uses the OAuth 2.0 authorization flow with PKCE. The app stores the
+  resulting refresh token encrypted under a key held in the Android Keystore, and that
+  token is explicitly excluded from Android's automatic device backup. Signing out
+  deletes it.
+</p>
+
+<h3>Prescription images</h3>
+<p>
+  When you scan a prescription photo, the image is sent to Google's Gemini API to
+  extract the text. The extracted text is stored locally on your device. Images are
+  never uploaded to any other service.
+</p>
+
+<h3>What is not collected</h3>
+<ul>
+  <li>No analytics, tracking, or advertising of any kind.</li>
+  <li>No user accounts on any server we operate.</li>
+  <li>No crash reporting or telemetry.</li>
+</ul>
+
+<h2 id="terms">Terms of service</h2>
+<p>
+  SamAI is provided as-is, for personal use, with no warranty and no guarantee of
+  availability. You are responsible for the content you enter into the app and for
+  keeping your own backups of anything you would be upset to lose.
+</p>
+<p>
+  The app is not a medical device. Extracted prescription text may be inaccurate and
+  must not be relied upon for medical decisions. Always verify against the original
+  prescription and consult a qualified pharmacist or doctor.
+</p>
+
+<footer>
+  This is a personal project. Contact the maintainer directly with any questions.
+</footer>
+
+</body>
+</html>
